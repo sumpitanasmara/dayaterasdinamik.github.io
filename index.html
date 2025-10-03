@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daya Teras Dinamik Sdn Bhd | Trusted Government Digital Partner</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom font import for a professional look */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7f9fc; /* Light background for professionalism */
+            color: #1f2937;
+        }
+        .header-bg {
+            background-color: #1e3a8a; /* Deep blue header */
+        }
+        .cta-button {
+            background-color: #f59e0b; /* Amber/Orange accent */
+            transition: background-color 0.3s;
+        }
+        .cta-button:hover {
+            background-color: #d97706;
+        }
+        .section-heading {
+            border-left: 5px solid #1e3a8a;
+            padding-left: 1rem;
+        }
+        .service-card {
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(30, 58, 138, 0.1), 0 4px 6px -2px rgba(30, 58, 138, 0.05);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Header -->
+    <header class="header-bg text-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <a href="#" class="flex-shrink-0 flex items-center">
+                    <span class="text-2xl font-extrabold tracking-tight">Daya Teras Dinamik</span>
+                    <span class="text-sm font-light ml-2">Sdn Bhd</span>
+                </a>
+                <nav class="hidden md:flex space-x-8 text-sm font-medium">
+                    <a href="#home" class="hover:text-amber-400 py-5">Laman Utama (Home)</a>
+                    <a href="#services" class="hover:text-amber-400 py-5">Perkhidmatan (Services)</a>
+                    <a href="#profile" class="hover:text-amber-400 py-5">Profil Syarikat (Profile)</a>
+                    <a href="#contact" class="hover:text-amber-400 py-5">Hubungi Kami (Contact)</a>
+                </nav>
+                <!-- Mobile Menu Button (Hamburger) -->
+                <button id="menu-button" class="md:hidden p-2 rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-amber-400">
+                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu (Hidden by default) -->
+        <div id="mobile-menu" class="hidden md:hidden bg-blue-800">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#home" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-blue-700">Laman Utama (Home)</a>
+                <a href="#services" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-blue-700">Perkhidmatan (Services)</a>
+                <a href="#profile" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-blue-700">Profil Syarikat (Profile)</a>
+                <a href="#contact" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-blue-700">Hubungi Kami (Contact)</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="relative bg-white pt-16 pb-24 sm:pt-24 sm:pb-32 overflow-hidden">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <div class="lg:w-3/4 mx-auto">
+                    <p class="text-base font-semibold text-amber-600 uppercase tracking-wider mb-2">Government Procurement Ready (MOF Registered)</p>
+                    <h1 class="text-5xl md:text-6xl font-extrabold text-blue-900 mb-6 leading-tight">
+                        Driving Digital <span class="text-amber-500">Excellence</span> for Malaysian Public Sector
+                    </h1>
+                    <p class="text-xl text-gray-600 mb-10">
+                        Daya Teras Dinamik Sdn Bhd provides high-integrity, compliant solutions in Multimedia Production, Professional Graphics Design, and Comprehensive ICT Services, supporting the nation's digital transformation agenda.
+                    </p>
+                    <a href="#services" class="inline-block px-10 py-4 font-bold rounded-lg shadow-xl cta-button text-white text-lg">
+                        Lihat Perkhidmatan Kami (View Our Services)
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Credibility Strip / Certifications -->
+        <section class="bg-blue-900 py-6">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex flex-wrap justify-center items-center gap-6 md:gap-12">
+                    <span class="text-sm text-gray-300 font-semibold uppercase">Certified & Compliant:</span>
+                    <span class="text-white text-lg font-bold">MOF Registered</span>
+                    <span class="text-white text-lg font-bold">CIDB/PKK</span>
+                    <span class="text-white text-lg font-bold">Bumiputera Status (STB)</span>
+                    <span class="text-white text-lg font-bold">ISO 9001:2015</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="py-20 sm:py-28 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-extrabold text-blue-900 section-heading mb-12">
+                    Perkhidmatan Utama (Core Services)
+                </h2>
+                <p class="text-lg text-gray-600 mb-16 max-w-3xl">
+                    We specialize in three strategic pillars, ensuring successful project execution from conceptual design to digital deployment, fully adhering to government tender specifications.
+                </p>
+
+                <div class="grid md:grid-cols-3 gap-10">
+
+                    <!-- Service Pillar 1: Multimedia Production -->
+                    <div class="service-card bg-white p-8 rounded-xl shadow-lg border-t-4 border-amber-500">
+                        <div class="text-5xl text-amber-500 mb-4">
+                            &#9654; <!-- Play icon as visual identifier -->
+                        </div>
+                        <h3 class="text-2xl font-bold text-blue-800 mb-4">Multimedia & E-Content</h3>
+                        <p class="text-gray-500 mb-4">Delivering compelling digital narratives and engaging learning content.</p>
+                        <ul class="list-disc list-inside text-gray-700 space-y-2 text-sm pl-4">
+                            <li>Corporate Video & Documentary Production</li>
+                            <li>E-Learning Courseware & Interactive Modules</li>
+                            <li>3D Animation & Visualization</li>
+                            <li>Digital Signage & Kiosk Content Development</li>
+                        </ul>
+                    </div>
+
+                    <!-- Service Pillar 2: Graphics & Design -->
+                    <div class="service-card bg-white p-8 rounded-xl shadow-lg border-t-4 border-amber-500">
+                        <div class="text-5xl text-amber-500 mb-4">
+                            &#9998; <!-- Pen/Pencil icon -->
+                        </div>
+                        <h3 class="text-2xl font-bold text-blue-800 mb-4">Graphics & Brand Design</h3>
+                        <p class="text-gray-500 mb-4">Professional design and publication services for clear government communication.</p>
+                        <ul class="list-disc list-inside text-gray-700 space-y-2 text-sm pl-4">
+                            <li>Annual Report & Policy Publication Layout</li>
+                            <li>Infographics & Data Visualization</li>
+                            <li>Exhibition Booth Design & Production</li>
+                            <li>Corporate Identity System Guidelines</li>
+                        </ul>
+                    </div>
+
+                    <!-- Service Pillar 3: IT Services & Solutions -->
+                    <div class="service-card bg-white p-8 rounded-xl shadow-lg border-t-4 border-amber-500">
+                        <div class="text-5xl text-amber-500 mb-4">
+                            &#x1F4BB; <!-- Laptop/computer icon -->
+                        </div>
+                        <h3 class="text-2xl font-bold text-blue-800 mb-4">Information & Communications Technology (ICT)</h3>
+                        <p class="text-gray-500 mb-4">Secure, customized, and resilient IT infrastructure and application development.</p>
+                        <ul class="list-disc list-inside text-gray-700 space-y-2 text-sm pl-4">
+                            <li>Custom Web/Mobile Application Development</li>
+                            <li>ICT Infrastructure Deployment & Support</li>
+                            <li>Data Migration & Managed Services</li>
+                            <li>Network Security & Consultation</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Company Profile / Credentials -->
+        <section id="profile" class="py-20 sm:py-28 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="lg:flex lg:items-center lg:space-x-12">
+                    <div class="lg:w-1/2 mb-10 lg:mb-0">
+                        <h2 class="text-3xl font-extrabold text-blue-900 section-heading mb-6">
+                            Profil Syarikat (Our Credentials)
+                        </h2>
+                        <p class="text-lg text-gray-600 mb-6">
+                            Founded on the principles of integrity and accountability, Daya Teras Dinamik Sdn Bhd is committed to supporting Malaysia's governance and digital goals with ethical and compliant service delivery.
+                        </p>
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <svg class="flex-shrink-0 w-6 h-6 text-amber-500 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                <p class="ml-3 text-gray-700 font-medium">Mission: To be the leading government contractor recognized for digital innovation and compliance excellence.</p>
+                            </div>
+                            <div class="flex items-start">
+                                <svg class="flex-shrink-0 w-6 h-6 text-amber-500 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                                <p class="ml-3 text-gray-700 font-medium">Core Value: Accountability and Quality Assurance in every government project delivered.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="lg:w-1/2 bg-gray-50 p-8 rounded-xl shadow-inner">
+                        <h3 class="text-xl font-bold text-blue-800 mb-4">Key Registrations for Procurement</h3>
+                        <ul class="space-y-4 text-sm">
+                            <li class="flex justify-between items-center py-2 border-b">
+                                <span class="font-semibold text-gray-700">Registration Status:</span>
+                                <span class="text-green-600 font-bold">Active & Valid</span>
+                            </li>
+                            <li class="flex justify-between items-center py-2 border-b">
+                                <span class="font-semibold text-gray-700">MOF Reg. No.:</span>
+                                <span class="text-blue-600">M.O.F/01-12345678-AB</span>
+                            </li>
+                            <li class="flex justify-between items-center py-2 border-b">
+                                <span class="font-semibold text-gray-700">CIDB/PKK Grade:</span>
+                                <span class="text-blue-600">G4 / Category B04</span>
+                            </li>
+                            <li class="flex justify-between items-center py-2">
+                                <span class="font-semibold text-gray-700">Bumiputera Status:</span>
+                                <span class="text-blue-600">Yes (STB Certified)</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 sm:py-28 bg-blue-900 text-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-extrabold mb-4">Hubungi Kami (Connect with Us)</h2>
+                    <p class="text-lg text-blue-200">
+                        We welcome inquiries regarding upcoming tenders, quotations, and partnership opportunities.
+                    </p>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-12">
+                    <!-- Contact Details -->
+                    <div>
+                        <h3 class="text-2xl font-bold mb-4 text-amber-400">Main Office (Kuala Lumpur)</h3>
+                        <p class="mb-6 text-blue-200">
+                            Daya Teras Dinamik Sdn Bhd (123456-D)<br>
+                            Level 10, Menara Gemilang,<br>
+                            Jalan Perdana Digital, 50480 Kuala Lumpur.
+                        </p>
+                        
+                        <div class="space-y-4 text-lg">
+                            <p class="flex items-center">
+                                <svg class="w-6 h-6 mr-3 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                                <a href="tel:+60322334455" class="hover:text-amber-400">+603 2233 4455</a>
+                            </p>
+                            <p class="flex items-center">
+                                <svg class="w-6 h-6 mr-3 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.842 5.234A2 2 0 0012 14c.731 0 1.4-.298 1.879-.79L21 8m-2 9H5a2 2 0 01-2-2V7a2 2 0 012-2h14a2 2 0 012 2v10a2 2 0 01-2 2z"></path></svg>
+                                <a href="mailto:procurement@dayaterasdinamik.my" class="hover:text-amber-400">procurement@dayaterasdinamik.my</a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form (Simulated) -->
+                    <div class="bg-white p-8 rounded-xl shadow-2xl">
+                        <h3 class="text-2xl font-bold mb-6 text-blue-900">Inquiry Form</h3>
+                        <!-- In a real deployment, this form would submit to a backend endpoint -->
+                        <form action="#" method="POST" class="space-y-4">
+                            <div>
+                                <label for="name" class="block text-sm font-medium text-gray-700">Name / Nama Organisasi</label>
+                                <input type="text" id="name" name="name" required class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-amber-500 focus:border-amber-500 text-gray-900">
+                            </div>
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-gray-700">Email Address</label>
+                                <input type="email" id="email" name="email" required class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-amber-500 focus:border-amber-500 text-gray-900">
+                            </div>
+                            <div>
+                                <label for="inquiry" class="block text-sm font-medium text-gray-700">Type of Inquiry / Jenis Pertanyaan</label>
+                                <select id="inquiry" name="inquiry" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-amber-500 focus:border-amber-500 text-gray-900">
+                                    <option>Government Tender</option>
+                                    <option>Quotation Request (RFP/RFQ)</option>
+                                    <option>General Information</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="message" class="block text-sm font-medium text-gray-700">Message / Mesej</label>
+                                <textarea id="message" name="message" rows="4" required class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-amber-500 focus:border-amber-500 text-gray-900"></textarea>
+                            </div>
+                            <button type="submit" class="w-full px-4 py-3 font-bold rounded-lg shadow-md cta-button text-white text-lg">
+                                Send Inquiry
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="md:flex md:justify-between md:items-center">
+                <div class="text-center md:text-left mb-4 md:mb-0">
+                    <p class="text-sm">&copy; 2025 Daya Teras Dinamik Sdn Bhd. All Rights Reserved. (123456-D)</p>
+                    <p class="text-xs text-gray-400">Committed to Good Governance & Transparency.</p>
+                </div>
+                <div class="flex justify-center md:space-x-6 space-x-4 text-sm">
+                    <a href="#" class="hover:text-amber-400">Privacy Policy</a>
+                    <a href="#" class="hover:text-amber-400">Terms of Use</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Mobile Menu Toggle -->
+    <script>
+        document.getElementById('menu-button').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+                if (targetElement) {
+                    // Hide mobile menu after selection
+                    const menu = document.getElementById('mobile-menu');
+                    menu.classList.add('hidden'); 
+                    
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
